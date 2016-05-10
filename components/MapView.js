@@ -383,6 +383,12 @@ var MapView = React.createClass({
       };
     }
 
+    if (props.showsUserLocation) {
+      console.warn('Warning: showsUserLocation is disabled in the Siphon Sandbox');
+    }
+
+    props.showsUserLocation = false;
+
     return (
       <AIRMap ref="map" {...props} />
     );
