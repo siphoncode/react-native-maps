@@ -253,7 +253,7 @@ public class AirMapView
 
     public void setShowsUserLocation(boolean showUserLocation) {
         this.showUserLocation = showUserLocation; // hold onto this for lifecycle handling
-        map.setMyLocationEnabled(showUserLocation);
+        //map.setMyLocationEnabled(showUserLocation);
     }
 
     public void addFeature(View child, int index) {
